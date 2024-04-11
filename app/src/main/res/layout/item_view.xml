@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15sp"
+            android:layout_weight="7">
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Nome do Pokemon"/>
+            <TextView
+                android:id="@+id/tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Tipo do Pokemon"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código: 1"
+            android:layout_weight="2"
+            android:textColor="#C1C1C1"/>
+    </LinearLayout>
+
+</RelativeLayout>

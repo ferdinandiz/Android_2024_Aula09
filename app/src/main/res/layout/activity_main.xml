@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20sp">
+
+    <TextView
+        android:id="@+id/textoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Código"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/textoTitulo"/>
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edCodigo"
+        android:layout_marginTop="5sp"
+        android:hint="Nome"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNome"
+        android:layout_marginTop="5sp"
+        android:hint="Número"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNumero"
+        android:layout_marginTop="5sp"
+        android:hint="Tipo"
+        android:textColor="@color/black"/>
+    <include
+        android:id="@+id/grupoBotao"
+        layout="@layout/grupo_botoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTipo"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="30sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupoBotao"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+
+</RelativeLayout>
